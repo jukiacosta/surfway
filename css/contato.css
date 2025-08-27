@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+ 
+body{background-color: #134762;}
 
     #page-wrapper{
         background-color: #134762 ;
@@ -12,7 +14,7 @@
     max-width: 500px;
     margin: 40px auto;
     padding: 25px;
-    background:  rgba(255, 255, 255, 0.9);
+    background:  rgba(255, 255, 255, 0);
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -47,4 +49,55 @@
 
 #contatoForm button:hover {
     background-color: #f49c38;
+}
+
+/* Fundo do container do formulário */
+.converse-container, .converse-container form {
+    background: transparent !important; /* força fundo transparente */
+    box-shadow: none !important;        /* remove sombra */
+    border: none !important;            /* remove borda */
+    padding: 0;                          /* remove espaçamento extra */
+    margin: 0;
+  }
+  
+  /* Inputs e textarea */
+  .converse-container input,
+  .converse-container textarea {
+    background: rgba(255, 255, 255, 0.2); /* semitransparente */
+    border: 1px solid #fff;               /* borda branca */
+    color: #fff;                           /* texto branco */
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  /* Placeholder */
+  .converse-container input::placeholder,
+  .converse-container textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+
+ 
+  form button {
+    display: flex;             /* permite centralizar o conteúdo */
+    justify-content: center;   /* centraliza o texto horizontalmente */
+    align-items: center;       /* centraliza o texto verticalmente */
+    margin: 20px auto 5 auto;  /* centraliza o botão dentro do form */
+  }
+  
+  
+body,
+input,
+select,
+textarea {
+	color: #fff;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	font-size: 15pt;
+	font-weight: 400;
+	letter-spacing: 0.075em;
+	line-height: 1.65em;
+}
+
+.wrapper.style1 header.major p {
+	color: #ffffff;
 }
