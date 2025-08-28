@@ -3,13 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-#container {
-    display: flex;
-    width: 100dvw;
-    height: 100dvw;
-}
-
-body {
+{
     font-family: Arial, sans-serif;
     font-size: x-large;
     margin: 0;
@@ -95,10 +89,10 @@ section.wrapper {
     border-radius: 20px;
     text-decoration: none;
     color: white;
-    font-size: 90px;
+    font-size: 20px;
     background-color: #58b4c6;
     transition: 0.3s;
-    width: 30dvw;
+    width: 20dvw;
     height: 10dvw;
     display: flex;
     justify-content: center;
