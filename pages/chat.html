@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat dos Surfistas</title>
+  <link rel="stylesheet" href="../chat.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1>🏄‍♂️ Chat dos Surfistas</h1>
+    </header>
+
+    <div class="chat-box" id="chat-box">
+      <!-- Mensagens -->
+      <div class="message received">E aí, já conferiu as ondas hoje?</div>
+      <div class="message sent">Sim! Tava irado no Campeche 🌊🔥</div>
+    </div>
+
+    <div class="chat-input">
+      <input type="text" placeholder="Digite sua mensagem..." id="message-input" />
+      <button id="send-btn">Enviar</button>
+    </div>
+  </div>
+
+  <script>
+    // Função simples de enviar mensagens (só para testes visuais)
+    const sendBtn = document.getElementById('send-btn');
+    const chatBox = document.getElementById('chat-box');
+    const input = document.getElementById('message-input');
+
+    sendBtn.addEventListener('click', () => {
+      const msg = input.value.trim();
+      if (msg !== '') {
+        const msgElement = document.createElement('div');
+        msgElement.className = 'message sent';
+        msgElement.innerText = msg;
+        chatBox.appendChild(msgElement);
+        input.value = '';
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }
+    });
+  </script>
+</body>
+</html>
