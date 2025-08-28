@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chat dos Surfistas</title>
-  <link rel="stylesheet" href="../chat.css" />
+  <link rel="stylesheet" href="../css/chat.css" />
 </head>
 <body>
   <div class="chat-container">
-    <header class="chat-header">
-      <h1>🏄‍♂️ Chat dos Surfistas</h1>
+    <header>
+      <h2>Chat dos Surfistas</h2>
     </header>
 
-    <div class="chat-box" id="chat-box">
-      <!-- Mensagens -->
+    <main class="chat-messages" id="chatMessages">
       <div class="message received">E aí, já conferiu as ondas hoje?</div>
       <div class="message sent">Sim! Tava irado no Campeche 🌊🔥</div>
-    </div>
+    </main>
 
-    <div class="chat-input">
-      <input type="text" placeholder="Digite sua mensagem..." id="message-input" />
-      <button id="send-btn">Enviar</button>
-    </div>
+    <form id="chatForm" class="chat-form">
+      <input type="text" id="msgInput" placeholder="Digite sua mensagem..." autocomplete="off" />
+      <button type="submit">Enviar</button>
+    </form>
   </div>
 
   <script>
-    // Função simples de enviar mensagens (só para testes visuais)
-    const sendBtn = document.getElementById('send-btn');
-    const chatBox = document.getElementById('chat-box');
-    const input = document.getElementById('message-input');
+    const chatForm = document.getElementById('chatForm');
+    const chatMessages = document.getElementById('chatMessages');
+    const msgInput = document.getElementById('msgInput');
 
-    sendBtn.addEventListener('click', () => {
-      const msg = input.value.trim();
-      if (msg !== '') {
-        const msgElement = document.createElement('div');
-        msgElement.className = 'message sent';
-        msgElement.innerText = msg;
-        chatBox.appendChild(msgElement);
-        input.value = '';
-        chatBox.scrollTop = chatBox.scrollHeight;
+    chatForm.addEventListener('submit', e => {
+      e.preventDefault();
+      const msg = msgInput.value.trim();
+      if(msg) {
+        const newMsg = document.createElement('div');
+        newMsg.classList.add('message', 'sent');
+        newMsg.textContent = msg;
+        chatMessages.appendChild(newMsg);
+        msgInput.value = '';
+        chatMessages.scrollTop = chatMessages.scrollHeight;
       }
     });
   </script>
 </body>
 </html>
+
