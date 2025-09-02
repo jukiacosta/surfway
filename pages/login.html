@@ -5,47 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - SurfWay</title>
-    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/css/login.css">
 </head>
 
 <body>
 
     <!-- Page Wrapper -->
-    <!-- <div id="page-wrapper"> -->
+    <div id="page">
 
-    <!-- Formulário de Cadastro -->
-    <section id="banner">
-        <div class="inner">
-            <div class="texto-inner">
-                <h2>Login</h2>
+        <!-- Formulário de Cadastro -->
+        <section id="banner">
+            <div class="inner">
+                <div class="texto-inner">
+                    <h2>Login</h2>
 
-                <form id="cadastroForm">
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="password" name="senha" placeholder="Senha" required>
-                    <button type="submit">Entrar</button>
-                </form>
+                    <form id="cadastroForm">
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="password" name="senha" placeholder="Senha" required>
+                        <button type="submit">Entrar</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Scripts -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.scrollex.min.js"></script>
-    <script src="/js/jquery.scrolly.min.js"></script>
-    <script src="/js/browser.min.js"></script>
-    <script src="/js/breakpoints.min.js"></script>
-    <script src="/js/util.js"></script>
-    <script src="/js/main.js"></script>
+        <!-- Scripts -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/jquery.scrollex.min.js"></script>
+        <script src="/js/jquery.scrolly.min.js"></script>
+        <script src="/js/browser.min.js"></script>
+        <script src="/js/breakpoints.min.js"></script>
+        <script src="/js/util.js"></script>
+        <script src="/js/main.js"></script>
 
-    <!-- Redirecionamento após cadastro -->
-    <script>
-        document.getElementById('cadastroForm').addEventListener('submit', function (event) {
-            event.preventDefault(); // evita envio padrão do formulário
-            // Redireciona para home.html após cadastro
-            window.location.href = 'home.html';
-        });
-    </script>
+        <!-- Redirecionamento após cadastro -->
+        <script>
+            document.getElementById('cadastroForm').addEventListener('submit', function (event) {
+                event.preventDefault(); // evita envio padrão do formulário
+                // Redireciona para home.html após cadastro
+                window.location.href = 'home.html';
+            });
+        </script>
+
+    </div>
 
 </body>
 

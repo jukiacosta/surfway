@@ -1,0 +1,27 @@
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+#ajusteMenu {
+    margin-top: 2rem;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+#ajusteMenu li {
+    width: 30dvw;
+}
+
+#ajusteMenu li a {
+    width: 30dvw;
+}
+
+.texto-inner p {
+    padding-bottom: 5rem !important;
+}
+
+.inner {
+    gap: 2rem !important;
+}

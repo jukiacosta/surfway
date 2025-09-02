@@ -71,8 +71,9 @@ section.wrapper {
 }
 
 .buttons-home {
-    display: flex;
+    display: grid;
     justify-content: center;
+    grid-template-columns: auto auto;
     gap: 20px;
     margin-top: 20px;
 }
@@ -93,4 +94,16 @@ section.wrapper {
 
 .buttons-home a:hover {
     background-color: #f49c38;
+}
+
+.teste {
+    background-color: steelblue;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.bg1 {
+    background-color: red;
 }
