@@ -29,3 +29,23 @@
     margin-top: 8px;
     font-size: 18px;
 }
+
+.camera-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 40px 20px;
+}
+
+.camera-grid iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+.camera-grid h3 {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+}
