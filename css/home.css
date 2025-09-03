@@ -83,7 +83,7 @@ section.wrapper {
     text-decoration: none;
     color: white;
     font-size: 20px;
-    background-color: #58b4c6;
+    background-color: #f49c38;
     transition: 0.3s;
     width: 20dvw;
     height: 10dvw;
@@ -93,11 +93,11 @@ section.wrapper {
 }
 
 .buttons-home a:hover {
-    background-color: #f49c38;
+    background-color: #fcb83c;
 }
 
 .teste {
-    background-color: steelblue;
+    background-color: rgb(19, 71, 98) ;
     height: 100dvh;
     display: flex;
     flex-direction: column;

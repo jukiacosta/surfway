@@ -7,7 +7,7 @@
 :root {
     --azul-escuro: #f49c38;
     --amarelo: #2f7fa3 ;
-    --azul-claro: #58b4c6;
+    --azul-claro: #134762 ;
     --laranja: #f49c38;
     --azul-medio: #2f7fa3;
 }
@@ -111,7 +111,7 @@ body {
   }
 
   body { 
-    background: #58b4c6  ;           
+    background: #134762  ;           
 }
   
 .wrapper.style1 header.major p {
